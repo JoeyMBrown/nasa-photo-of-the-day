@@ -11,6 +11,9 @@ function App() {
        setNasaData(response.data);
        return () => console.log('Cleanup API data upon unmounting.');
      })
+     .catch((err) => {
+      console.log(err.message);
+     })
    }, []);
 
   // useEffect(() => {
