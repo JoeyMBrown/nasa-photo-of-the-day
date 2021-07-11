@@ -1,4 +1,5 @@
 import React from "react";
+import "../ComponentStyles/Description.css"
 
 export default function Description({description, media_type}) {
     return (
