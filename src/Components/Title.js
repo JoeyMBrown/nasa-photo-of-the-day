@@ -1,6 +1,10 @@
 import React from "react";
-import "../ComponentStyles/Title.css"
+//import "../ComponentStyles/Title.css"
+import styled from "styled-components";
 
 export default function Title({title, media_type}) {
-    return media_type === "image" ? <h1 class="title">{title}</h1> : <h1 class="title">Find the Moon</h1>
+    const StyledTitle = styled.h1`
+        font-family: 'Merriweather', serif;
+    `;
+    return media_type === "image" ? <StyledTitle>{title}</StyledTitle> : <StyledTitle>Find the Moon</StyledTitle>
 }
